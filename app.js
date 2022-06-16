@@ -1,6 +1,7 @@
 
-const playerOneChoices = []
-const playerTwoChoices = []
+const playerXChoices = []
+const playerOChoices = []
+var currentPlayer = "O"
 
 const winningOptions = [
     [1,2,3],
@@ -13,29 +14,42 @@ const winningOptions = [
     [3,5,7],
 ]
 
-function checkResult(playerOneChoices) {
-  
+function checkResult() {
+    
+    let res = winningOptions.filter(combo => combo.filter(comboValue => playerOChoices.indexOf(comboValue) > -1).length == 3);
+    var resFinal = [].concat.apply([], res)
+
+    winningOptions.forEach(element => {
+        if (JSON.stringify(resFinal) == JSON.stringify(element)){
+            console.log("ganhei")
+        } 
+    });
 }
 
-function saveBtnNumber(btnNumber) {
+function getBtnNumber(btnNumber) {
 
     const firstBtn = document.getElementById(`bt${btnNumber}`)
     
-    if (playerOneChoices.includes(btnNumber)){
-        
-        const index = playerOneChoices.indexOf(btnNumber)
-        playerOneChoices.splice(index, btnNumber)
-        firstBtn.innerHTML = ""
-        
-    } else {
-        playerOneChoices.push(btnNumber)
-        firstBtn.innerHTML = "X"
-    }
-    // console.log(playerOneChoices)
+    //AQUI BLOQUEAMOS JOGAR NO MESMO BTN
+    if(firstBtn.innerText != "") return;
 
-    checkResult(playerOneChoices)
-    console.log(playerOneChoices)
+    //AQUI INNER TEXT TOMA VALOR DE CUURENT PLAYER
+    firstBtn.innerText = currentPlayer;
+
+    if(currentPlayer == "O") {
+        currentPlayer = "X";
+        playerOChoices.push(btnNumber)
+    }  
+    else {
+        currentPlayer = "O"; 
+        playerXChoices.push(btnNumber)
+    }
+
+    console.log(playerOChoices)
+    console.log(playerXChoices)
     
+    checkResult()
+
 }
 
 
