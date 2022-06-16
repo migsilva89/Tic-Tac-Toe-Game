@@ -36,9 +36,7 @@ function getBtnNumber(btnNumber) {
     const firstBtn = document.getElementById(`bt${btnNumber}`)
     let player = currentPlayer
 
-    if(firstBtn.innerText != "") return;
-
-    
+    if(firstBtn.innerHTML != "") return;
 
     if(currentPlayer == "O") {
         firstBtn.innerText = currentPlayer;//aqui leva o design do X
@@ -46,6 +44,7 @@ function getBtnNumber(btnNumber) {
         currentPlayer = "X";
         playerOChoices.push(btnNumber)
     }  
+
     else {
         firstBtn.innerText = currentPlayer;//aqui leva o design na roda
         firstBtn.innerHTML = `<img class="w-20 h-24" src="./images/x.png" alt="">`
