@@ -21,21 +21,23 @@
            <h1 class="text-4xl">Tic Tac Toe Game</h1>
         </header>
 
+        <p id="winner"></p>
+
         <section class=" p-8 to-orange-300 mt-10 rounded-lg">
             <div class="pb-4 flex gap-6 justify-center">
-               <button class="drop-shadow-xl rounded-lg w-20 h-20 bg-white" id="bt1" onclick="getBtnNumber(1)"></button>
-               <button class="drop-shadow-xl rounded-lg w-20 h-20 bg-white" id="bt2" onclick="getBtnNumber(2)"></button>
-               <button class="drop-shadow-xl rounded-lg w-20 h-20 bg-white" id="bt3" onclick="getBtnNumber(3)"></button>
+               <button class="choice drop-shadow-xl rounded-lg w-20 h-20 bg-white" id="bt1" onclick="toggleSlot(1)"></button>
+               <button class="choice drop-shadow-xl rounded-lg w-20 h-20 bg-white" id="bt2" onclick="toggleSlot(2)"></button>
+               <button class="choice drop-shadow-xl rounded-lg w-20 h-20 bg-white" id="bt3" onclick="toggleSlot(3)"></button>
             </div>
             <div class="pb-4 flex gap-x-6 justify-center">
-                <button class="drop-shadow-xl rounded-lg w-20 h-20 bg-white" id="bt4" onclick="getBtnNumber(4)"></button>
-                <button class="drop-shadow-xl rounded-lg w-20 h-20 bg-white" id="bt5" onclick="getBtnNumber(5)"></button>
-                <button class="drop-shadow-xl rounded-lg w-20 h-20 bg-white" id="bt6" onclick="getBtnNumber(6)"></button>
+                <button class="choice drop-shadow-xl rounded-lg w-20 h-20 bg-white" id="bt4" onclick="toggleSlot(4)"></button>
+                <button class="choice drop-shadow-xl rounded-lg w-20 h-20 bg-white" id="bt5" onclick="toggleSlot(5)"></button>
+                <button class="choice drop-shadow-xl rounded-lg w-20 h-20 bg-white" id="bt6" onclick="toggleSlot(6)"></button>
             </div>
             <div class="flex gap-6 justify-center">
-                <button class="drop-shadow-xl rounded-lg w-20 h-20 bg-white" id="bt7" onclick="getBtnNumber(7)"></button>
-                <button class="drop-shadow-xl rounded-lg w-20 h-20 bg-white" id="bt8" onclick="getBtnNumber(8)"></button>
-                <button class="drop-shadow-xl rounded-lg w-20 h-20 bg-white" id="bt9" onclick="getBtnNumber(9)"></button>
+                <button class="choice drop-shadow-xl rounded-lg w-20 h-20 bg-white" id="bt7" onclick="toggleSlot(7)"></button>
+                <button class="choice drop-shadow-xl rounded-lg w-20 h-20 bg-white" id="bt8" onclick="toggleSlot(8)"></button>
+                <button class="choice drop-shadow-xl rounded-lg w-20 h-20 bg-white" id="bt9" onclick="toggleSlot(9)"></button>
             </div>
         </section>
 
