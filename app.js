@@ -1,4 +1,3 @@
-
 let playerXChoices = []
 let playerOChoices = []
 let currentPlayer = "O"
@@ -16,23 +15,25 @@ const winningOptions = [
 
 function checkResult(player) 
 {
-    
     let playerOneMoves = getPlayerResult(playerOChoices);
     let playerTwoMoves = getPlayerResult(playerXChoices);
 
     winningOptions.forEach(element => {
 
         if (JSON.stringify(playerOneMoves) == JSON.stringify(element)){
-            resetBoard(player);
+               document.getElementById('winner').innerHTML = '🎉 Yay! Player '+player+' Wins!!'
+            setTimeout(() => resetBoard(player), 250);
+          
             return;
         }
 
         if (JSON.stringify(playerTwoMoves) == JSON.stringify(element)) {
-            resetBoard(player);
+             document.getElementById('winner').innerHTML = '🎉 Yay! Player '+player+' Wins!!'
+            setTimeout(() => resetBoard(player), 250);
+            
             return;
         }
     });
-
 }
 
 function resetBoard(player = null)
@@ -50,7 +51,7 @@ function resetBoard(player = null)
     // Reset the winner div after 2 seconds ( 2 x 1000 ). We dont need the myTimeout variable here
     // But this is very important in vue and react because we want to clear any pending "effects"
     // Before unmounting the component.
-    const myTimeout = setTimeout(() => document.getElementById('winner').innerHTML = '' , 2000);
+    const myTimeout = setTimeout(() => document.getElementById('winner').innerHTML = '' , 1000);
 }
 
 
@@ -88,20 +89,4 @@ function toggleSlot(btnNumber) {
     }
    
     checkResult(currentPreviousPlayer)
-
 }
-
-
-
-
-
-
-
-    
-    
-
-
-
-   
-
-
