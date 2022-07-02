@@ -8,6 +8,7 @@
 My goal with this project was to practice what I have been learning on Javascript, arrays, functions, JSON, DOM, setTimeout(), and filter(). 
  
 ### I would like to:
+- Create a state for a draw;
 - Add a scoreboard;
 - Save data in the local storage;
 - CPU player; 
