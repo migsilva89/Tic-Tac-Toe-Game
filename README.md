@@ -15,6 +15,8 @@ My goal with this project was to practice what I have been learning on Javascrip
 
 ##### Pull requests are very welcome! I'm looking for collaborations and for people to study and grow together.
 
+[Play/test Live](tic-tac-toe-game-pi.vercel.app)
+
 [Linkedin](https://www.linkedin.com/in/miguelmpsilva/) - 
 [Twitter](https://twitter.com/Miguelmpsilva)
 
