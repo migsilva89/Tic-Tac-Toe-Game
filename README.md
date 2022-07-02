@@ -13,7 +13,7 @@ My goal with this project was to practice what I have been learning on Javascrip
 - CPU player; 
 
 
-##### Pull requests are very welcome! I'm looking for collabs and for people to study and grow together.
+##### Pull requests are very welcome! I'm looking for collaborations and for people to study and grow together.
 
 [Linkedin](https://www.linkedin.com/in/miguelmpsilva/) - 
 [Twitter](https://twitter.com/Miguelmpsilva)
