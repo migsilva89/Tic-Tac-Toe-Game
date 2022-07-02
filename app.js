@@ -54,7 +54,6 @@ function resetBoard(player = null)
     const myTimeout = setTimeout(() => document.getElementById('winner').innerHTML = '' , 1000);
 }
 
-
 function getPlayerResult(currentPlayerMoves)
 { 
     let filterPlayerMoves = winningOptions.filter(combo => combo.filter(comboValue => currentPlayerMoves.indexOf(comboValue) > -1).length == 3);
