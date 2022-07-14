@@ -1,5 +1,7 @@
 # Tic-Tac-Toe Game 
 
+![Screenshot](https://i.ibb.co/nPRczf7/Screenshot-2022-07-14-at-15-21-02.png)
+
 ### Made with:
 - Html
 - TailwindCss cdn
@@ -14,7 +16,7 @@ My goal with this project was to practice what I have been learning on Javascrip
 - CPU player; 
 
 
-##### Pull requests are very welcome! I'm looking for collaborations and for people to study and grow together.
+##### Pull requests are very welcome!
 
 #### You can play and teste [HERE](https://tic-tac-toe-game-pi.vercel.app/)
 
